@@ -6,7 +6,7 @@
 <li><h4>"<%= q.quote %>"</h4><br>
 - <%= q.character%>, <%= q.source %> (<%= q.year %>)
 <br>
-Rating: <%= q.rating %><br><br>
+<b>Rating: <%= q.rating %></b><br><br>
 
 <%= button_to("Like", "/upvote/#{q.id}", method: :upvote, class: "like")  %>
 <%= button_to("Dislike", "/downvote/#{q.id}", method: :downvote, class: 'dislike')  %><br><br>
