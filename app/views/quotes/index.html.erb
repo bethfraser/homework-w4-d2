@@ -1,0 +1,16 @@
+
+
+
+<ul>
+<% @quotes.order('rating DESC').each do |q| %>
+<li><h4>"<%= q.quote %>"</h4><br>
+- <%= q.character%>, <%= q.source %> (<%= q.year %>)
+<br>
+Rating: <%= q.rating %><br><br>
+
+<%= button_to("Like", "/upvote/#{q.id}", method: :upvote, class: "like")  %>
+<%= button_to("Dislike", "/downvote/#{q.id}", method: :downvote, class: 'dislike')  %><br><br>
+<%= link_to('Show Details', quote_path(q), class: 'edit') %>  
+<%= link_to('Edit', edit_quote_path(q), class: 'edit') %>  <%= button_to("Delete", quote_path(q), method: :delete, data: {confirm: 'Are you sure you want to delete this quote?'}, class: 'edit')  %><br><br></li>
+<% end %>
+</ul>

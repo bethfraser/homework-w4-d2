@@ -1,0 +1,26 @@
+<h2>Add New Quote</h2>
+
+<%= form_for @quote do |f| %>
+<%= f.label :quote %>
+<%= f.text_field :quote %>
+<br><br>
+<%= f.label :source, "Source (series/film etc)" %>
+<%= f.text_field :source %>
+<br><br>
+<%= f.label :character %>
+<%= f.text_field :character %>
+<br><br>
+<%= f.label :actor, "Actor/Actress" %>
+<%= f.text_field :actor %>
+<br><br>
+<%= f.label :year %>
+<%= f.text_field :year %>
+<br><br>
+<%= f.label :photo %>
+<%= f.text_field :photo %>
+<br><br>
+<%= f.label :rating %>
+<%= f.range_field :rating, max:10, min:1 %>
+<br><br>
+<%= f.submit 'Add Quote' %>
+<% end %>

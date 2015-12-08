@@ -1,0 +1,129 @@
+body {
+  font: 12px Verdana;
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  width: 100%;
+  padding: 15px;
+  background-color: #6ed3cf;
+  text-align: center;
+}
+
+header a {
+  color: white;
+  font-family: 'Courier New', sans-serif;
+  font-size: 48px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav {
+  width: 100%;
+  padding: 5px;
+  background-color: #9068be;
+  text-align: center;
+  color: white;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Courier New', sans-serif;
+  font-size: 28px;
+  padding: 5px 15px;
+}
+
+nav a:hover {
+  background-color: #b195d1;
+  border-radius: 5%;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.main {
+  padding: 20px;
+
+}
+
+.main ul {
+  width: 90%;
+  text-align: center;
+}
+
+.main li {
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+  margin: 10px;
+}
+
+.main li:first-child {
+  width: 100%;
+  font-size: 18px;
+}
+
+.main li:first-child h4 {
+  font-size: 38px;
+}
+
+form {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+h4 {
+  margin: 10px 0px;
+  padding: 0;
+  font-family: Georgia, serif;
+  font-size: 22px;
+}
+
+.like, .dislike, .edit {
+  font-weight: bold;
+  background-color: white;
+  padding: 5px 15px;
+  border: 0;
+  font-size: 16px;
+  font-family: 'Courier New';
+}
+
+.edit {
+  text-decoration: underline;
+  color: #9068be;
+}
+
+.like {
+  color: white;
+  background-color: #A8E4C4;
+  text-shadow: 1px 1px 1px grey;
+  border-radius: 8%;
+}
+
+.dislike {
+  color: white;
+  background-color: #E4A8C8;
+  text-shadow: 1px 1px 1px grey;
+  border-radius: 8%;
+}
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
